@@ -40,3 +40,73 @@ h1 {
   font-size: 16px;
   cursor: pointer;
 }
+
+#startStopBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to top, #4CAF50, #87CEEB);
+  height: 100vh;
+  position: relative;
+}
+
+/* Moving clouds */
+.cloud {
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  height: 60px;
+  background: #fff;
+  border-radius: 100px;
+  opacity: 0.7;
+  animation: moveClouds 60s linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  top: -20px;
+  left: 20px;
+}
+
+.cloud::after {
+  width: 120px;
+  height: 120px;
+  top: -40px;
+  left: 80px;
+}
+
+/* Cloud animation keyframes */
+@keyframes moveClouds {
+  0% {
+    left: -250px;
+  }
+  100% {
+    left: 110vw;
+  }
+}
+
+/* Add multiple clouds at different positions and speeds */
+.cloud:nth-child(1) {
+  top: 30px;
+  animation-duration: 70s;
+}
+.cloud:nth-child(2) {
+  top: 100px;
+  animation-duration: 90s;
+}
+.cloud:nth-child(3) {
+  top: 170px;
+  animation-duration: 65s;
+}
