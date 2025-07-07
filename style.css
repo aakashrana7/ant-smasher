@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#scoreboard {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#gameArea {
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  margin: 0 auto;
+  border: 3px solid #333;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ant {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://img.icons8.com/emoji/48/000000/ant-emoji.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+#restartBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
